@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Trabalhando com Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes, ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 730px)" srcset="imagens/img-300.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="imagens/img-700.png" type="image/png">
+        <img src="imagens/img-1000.png" alt="Imagem Grande">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    <audio controls>
+        <source src="midia/audio.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

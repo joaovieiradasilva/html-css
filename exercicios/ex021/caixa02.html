@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Grouping tags</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+        
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        nav {
+            text-align: left;
+        }
+
+        nav > a {
+            background-color: lightgray;
+            color: black;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px black;
+        }
+
+        nav > a:hover {
+            background-color: rgb(158, 158, 158);
+            color: white;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px 10px;
+            margin: 0px 10px;
+        }
+
+        section {
+            background-color: lightgray;
+            display: inline-block;
+            width: 48.8%;
+            padding: 10px;
+        }
+
+        #bola {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Assuntos sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et explicabo corporis nihil mollitia veniam, voluptatem assumenda? Voluptates atque aliquid repellendus error voluptas laborum praesentium! Beatae a quasi impedit tempore possimus!</p>
+                <aside>
+                    <p>Artigo escrito por...</p>
+                </aside>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et explicabo corporis nihil mollitia veniam, voluptatem assumenda? Voluptates atque aliquid repellendus error voluptas laborum praesentium! Beatae a quasi impedit tempore possimus!</p>
+                <aside>
+                    <p>Artigo escrito por...</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo João.</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
