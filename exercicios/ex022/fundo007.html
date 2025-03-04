@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Fundo</title>
+    <style>
+        #container {
+            position: relative;
+            height: 500px;
+            background: lightpink url('imagens/target001.png') no-repeat center center / 100% 100%;
+            padding: 10px;
+        }
+
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 300px;
+            background: lightcoral url('imagens/target001.png') no-repeat center center / 100% 100%;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
