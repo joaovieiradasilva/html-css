@@ -13,29 +13,50 @@
         table {
             border-collapse: collapse;
             width: 400px;
+            position: relative;
+        }
+
+        table caption {
+            background-color: lightgray;
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
         }
 
         table thead, tfoot {
-            background-color: lightgray;
+            background-color:gray;
+            color: white;
         }
         
         table td, th {
-            border: 1px solid black;
+            border: 1px solid rgb(75, 75, 75);
             padding: 10px;
         }
 
         table td.num {
             text-align: right;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:gray;
+            
+        }
+
+        tbody tr:nth-child(2n) { /* Cria o efeito zebrado, comumente usado em tabelas */
+            background-color: rgba(211, 211, 211, 0.7);
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População por estado</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -150,7 +171,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>212 583 720</strong></td>
             </tr>
         </tfoot>
