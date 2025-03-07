@@ -14,42 +14,77 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             padding: 10px;
+            background-color: lightgray;
         }
 
         h1, p, ul {
             padding: 10px;
         }
 
+        h1 {
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+        }
+
         ul {
             margin-left: 20px;
         }
 
+        header {
+            background-color: gray;
+            color: white;
+            border-radius: 10px 10px 0px 0px;
+            text-align: center;
+            border-top: 2px solid rgb(0, 0, 0);
+            border-right: 2px solid rgb(0, 0, 0);;
+            border-left: 2px solid rgb(0, 0, 0);;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 10px;
+            border-radius: 0px 0px 10px 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgb(0, 0, 0);
+            border-right: 2px solid rgb(0, 0, 0);;
+            border-left: 2px solid rgb(0, 0, 0);;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            transition-duration: 0.3s;
+        }
+
+        a:hover {
+            background-color: rgb(197, 197, 197);
+            color: black;
+        }
+
         iframe {
-            display: block;
             margin: auto;
-            width: 600px;
-            height: 850px;
-            border: 2px solid lightgray;
+            display: block;
+            width: 95%;
+            height: 700px;
+            border: 2px solid rgb(0, 0, 0);
             border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Faça uma escola</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae asperiores natus aperiam! Eos dolorum dolorem illo quas soluta aut, nulla ipsum, velit corporis, nisi deleniti ducimus minima esse impedit nostrum!</p>
+    <header>
+        <h1>Escolha sua Maid</h1>
+    </header>
+    <nav>
+        <a href="paginasextras/pag001.html" target="frame" rel="noopener noreferrer">Maid rosa</a>
+        <a href="paginasextras/pag002.html" target="frame" rel="noopener noreferrer">Maid azul</a>
+        <a href="paginasextras/pag003.html" target="frame" rel="noopener noreferrer">Maid marrom</a>
+    </nav>
 
-    <ul>
-        <li><a href="paginasextras/pag001.html" target="frame" rel="noopener noreferrer">Primeira página</a></li>
-        <li><a href="paginasextras/pag002.html" target="frame" rel="noopener noreferrer">Segunda página</a></li>
-        <li><a href="paginasextras/pag003.html" target="frame" rel="noopener noreferrer">Terceira página</a></li>
-    </ul>
-
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae asperiores natus aperiam! Eos dolorum dolorem illo quas soluta aut, nulla ipsum, velit corporis, nisi deleniti ducimus minima esse impedit nostrum!</p>
-
-    <iframe name="frame" srcdoc="<h1>Escolha uma das opções da lista acima.</h1>" frameborder="0">
+    <iframe name="frame" srcdoc="" frameborder="0">
         <p>Infelizmente seu navegador não é compatível com isso.</p>
     </iframe>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem saepe placeat esse, ullam consequatur iure dolores maiores totam necessitatibus minima error quisquam, omnis, sapiente aliquid optio ad vel minus deleniti? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex omnis non quas architecto molestias, doloremque nesciunt amet similique perferendis vel magni voluptates asperiores aliquam velit id. Delectus provident tenetur nobis?</p>
 </body>
 </html>
