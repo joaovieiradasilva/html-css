@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../ex020/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Menu Responsivo</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="iconmenu" class="material-icons">menu</span>
+        <menu id="options">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testanto Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus inventore iusto molestias voluptates nobis! Impedit quia, odio voluptas natus laudantium sint beatae blanditiis tenetur ab necessitatibus odit, ullam error laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nihil unde sunt consectetur temporibus accusantium beatae tenetur fugit, expedita vitae aut reprehenderit praesentium earum quasi consequatur, cum in obcaecati asperiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus inventore iusto molestias voluptates nobis! Impedit quia, odio voluptas natus laudantium sint beatae blanditiis tenetur ab necessitatibus odit, ullam error laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nihil unde sunt consectetur temporibus accusantium beatae tenetur fugit, expedita vitae aut reprehenderit praesentium earum quasi consequatur, cum in obcaecati asperiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus inventore iusto molestias voluptates nobis! Impedit quia, odio voluptas natus laudantium sint beatae blanditiis tenetur ab necessitatibus odit, ullam error laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nihil unde sunt consectetur temporibus accusantium beatae tenetur fugit, expedita vitae aut reprehenderit praesentium earum quasi consequatur, cum in obcaecati asperiores.</p>
+        </article>
+    </main>
+    <script>
+        window.addEventListener('resize', mudarTela)
+        function mudarTela() {
+            var op = document.getElementById('options')
+            if (window.innerWidth >= 769) {
+                op.style.display = 'block'
+            } else {
+                op.style.display = 'none'
+            }
+        }
+        document.getElementById('iconmenu').addEventListener('click', abrir)
+        function abrir() {
+            var op = document.getElementById('options')
+            if (op.style.display === 'none' || op.style.display === '') {
+                op.style.display = 'block'
+            } else {
+                op.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
